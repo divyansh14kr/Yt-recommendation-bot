@@ -27,7 +27,7 @@ def browse_videos(video_ids, watch_time):
     for i, video_id in enumerate(video_ids):
         video_url = f"https://www.youtube.com/watch?v={video_id}"
         print(f"Watching video {i+1}/{len(video_ids)}: {video_url}")
-        driver.get(video_url)̀
+        driver.get(video_url)
         time.sleep(watch_time)  # Watch the video for the specified time
 
     # Close the WebDriver
